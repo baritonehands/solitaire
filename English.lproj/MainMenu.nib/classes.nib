@@ -1,0 +1,14 @@
+{
+    IBClasses = (
+        {CLASS = CardView; LANGUAGE = ObjC; SUPERCLASS = NSView; }, 
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {
+            ACTIONS = {newGame = id; showPreferencePanel = id; }; 
+            CLASS = SolitaireController; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {cardView = CardView; window = NSWindow; }; 
+            SUPERCLASS = NSObject; 
+        }
+    ); 
+    IBVersion = 1; 
+}

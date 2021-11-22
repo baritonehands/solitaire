@@ -15,7 +15,7 @@
 	NSImage *restart,*undo,*pref,*newgame;
 	IBOutlet NSWindow *window;
 	//IBOutlet NSWindow *testSheet;
-	int currSeed;
+	long currSeed;
 	BOOL inProgress;
 }
 

@@ -124,6 +124,7 @@
 			//[bezPath fillRect];
 		}
 		while(card!=nil){
+            imageRect.origin = NSZeroPoint;
 			if ([card isFaceDown]) {
 				image = backImage;
 				if ([card nextCard]) {
@@ -158,6 +159,7 @@
 					drawingRect.size.width = imageSize.width;
 					imageRect.size.height = imageSize.height - 71.0;
 					drawingRect.size.height = imageSize.height - 71.0;
+                    imageRect.origin = NSMakePoint(0, 71.0);
 				} else {
 					imageRect.size = imageSize;
 					drawingRect.size = imageSize;
@@ -166,7 +168,7 @@
 				j++;
 			}
 			//tail = (card == [pile tail]);
-			imageRect.origin = NSZeroPoint;
+			
 			
 			//imageRect.size.width = imageSize.width;
 			//imageRect.size.height = imageSize.height - 65 * (1-(k+1)/[pile count]);
@@ -307,11 +309,12 @@
 				drawingRect.size.width = imageSize.width;
 				imageRect.size.height = imageSize.height - 71;
 				drawingRect.size.height = imageSize.height - 71;
+                imageRect.origin = NSMakePoint(0, 71.0);
 			} else {
 				imageRect.size = imageSize;
 				drawingRect.size = imageSize;
+                imageRect.origin = NSZeroPoint;
 			}
-			imageRect.origin = NSZeroPoint;
 			[image drawInRect:drawingRect
 					fromRect:imageRect
 					operation:NSCompositeSourceOver

@@ -106,7 +106,7 @@
 
 - (IBAction)newGame:(id)sender
 {
-	int choice=0;
+	long choice=0;
 	
 	if([[NSString stringWithFormat:@"%@",[sender class]] isEqual:@"NSToolbarItem"]){
 		if([sender tag] == 0){

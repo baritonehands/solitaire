@@ -19,7 +19,7 @@ extern NSString *BNRCardBackKey;
 	IBOutlet NSMatrix *cardBack;
 	IBOutlet NSColorWell *tableBGColor;
 	SolitaireController *parent;
-	int ruleState,backState,cardNumState;
+	uint64_t ruleState,backState,cardNumState;
 }
 - (IBAction)changeNumberOfCards:(id)sender;
 //- (IBAction)changeRules:(id)sender;

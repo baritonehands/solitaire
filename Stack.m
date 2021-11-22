@@ -145,7 +145,6 @@
 					tail = nil;
 					count = 0;
 				} else {
-					newStack = [Stack new];
 					newStack->count = count - i;
 					newStack->top = card;
 					newStack->tail = tail;
